@@ -19,12 +19,14 @@
   "license": "BSD",
   "dependencies": {
     "xml2js": "~0.4.1",
-    "request": "~2.33.0"
+    "request": "~2.33.0",
+    "bland": "0.0.1"
   },
   "devDependencies": {
     "istanbul": "~0.2.4",
     "mocha": "~1.17.1",
     "should": "~3.1.2",
-    "express": "~3.5.0"
+    "express": "~3.5.0",
+    "mc-logger": "0.0.0"
   }
 }

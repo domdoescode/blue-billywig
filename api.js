@@ -1,13 +1,7 @@
 var request = require('request')
   , xml2js = require('xml2js')
-  , _ = require('lodash')
   , crypto = require('crypto')
-  , defaultLogger =
-    { info: console.log
-    , error: console.error
-    , debug: console.log
-    , warn: console.warn
-    }
+  , defaultLogger = require('bland')
 
 module.exports = function (options) {
   // Default options to an object if not passed through

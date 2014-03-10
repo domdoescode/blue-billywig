@@ -1,10 +1,5 @@
 var noop = function () {}
-  , noLogger =
-    { info: noop
-    , debug: noop
-    , error: noop
-    , warn: noop
-    }
+  , noLogger = require('mc-logger')
   , options =
     { logger: noLogger
     , baseUrl: 'http://localhost:3001'
