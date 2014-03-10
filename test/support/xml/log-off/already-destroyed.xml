@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<response code="500" error="true">The session could not be destroyed because no session was found</response>

@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<response code="404" error="true">no user context or user is not authenticated</response>
