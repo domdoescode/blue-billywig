@@ -1,6 +1,6 @@
 {
   "name": "blue-billywig",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Integration for Blue Billywig video management system",
   "main": "api.js",
   "scripts": {
@@ -14,7 +14,7 @@
   ],
   "author": {
     "name": "Dom Udall",
-    "email": "dom@synthmedia.co.uk"
+    "email": "udall.dom@gmail.com"
   },
   "license": "BSD",
   "dependencies": {
