@@ -1,6 +1,7 @@
 var xml2js = require('xml2js')
   , crypto = require('crypto')
   , defaultLogger = require('bland')
+  , request = require('request')
 
 module.exports = function (options) {
   // Default options to an object if not passed through
@@ -8,7 +9,7 @@ module.exports = function (options) {
 
   var baseUrl = options.baseUrl || 'http://trial.bbvms.com'
     , logger = options.logger || defaultLogger
-    , request = options.request || require('request')
+    , requestDelegate = options.request || request
 
   /*
    * Get a token from Blue Billywig for use when hashing the authentication
@@ -19,7 +20,7 @@ module.exports = function (options) {
 
     var parser = new xml2js.Parser()
 
-    request(
+    requestDelegate(
       { url: baseUrl + '/api/getRandom'
       , method: 'GET'
       , jar: true
@@ -63,7 +64,7 @@ module.exports = function (options) {
         , secondPass = crypto.createHash('md5').update(firstPass).digest('hex')
         , authHash = new Buffer(secondPass).toString('base64')
 
-      request(
+      requestDelegate(
         { url: baseUrl + '/api/bbauth'
         , qs:
           { action: 'get_user'
@@ -105,7 +106,7 @@ module.exports = function (options) {
 
     var parser = new xml2js.Parser()
 
-    request(
+    requestDelegate(
       { url: baseUrl + '/api/bbauth'
       , qs: { action: 'checkSession' }
       , method: 'GET'
@@ -147,7 +148,7 @@ module.exports = function (options) {
 
     var parser = new xml2js.Parser()
 
-    request(
+    requestDelegate(
       { url: baseUrl + '/api/bbauth'
       , qs: { action: 'logoff' }
       , method: 'GET'
@@ -184,7 +185,7 @@ module.exports = function (options) {
   var search = function (query, callback) {
     logger.info('Searching Blue Billywig for', query.query)
 
-    request(
+    requestDelegate(
       { url: baseUrl + '/json/search'
       , qs: query
       , method: 'GET'
