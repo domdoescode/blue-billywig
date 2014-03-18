@@ -207,6 +207,13 @@ module.exports = function (options) {
         }
 
         body.items.forEach(function (result) {
+          /*
+           * Response for assets and thumbnails are returned as JSON strings,
+           * and are not always present. Try catches are in place to cover the
+           * scenarios when the field is not set at all, and when the JSON
+           * string is not valid.
+           */
+
           try {
             result.assets = JSON.parse(result.assets)
           } catch (e) {
