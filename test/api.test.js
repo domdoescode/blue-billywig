@@ -315,6 +315,32 @@ describe('search()', function () {
     })
   })
 
+  it('should return correctly even if no assets are defined', function (done) {
+    var blueBillywig = new BlueBillywig(options)
+
+    app.set('content', '/json/search/no-assets.json')
+
+    blueBillywig.search({ query: 'test' }, function (error, results) {
+      if (error) return done(error)
+
+      results.length.should.equal(1)
+      done()
+    })
+  })
+
+  it('should return correctly even if no thumbnails are defined', function (done) {
+    var blueBillywig = new BlueBillywig(options)
+
+    app.set('content', '/json/search/no-thumbnails.json')
+
+    blueBillywig.search({ query: 'test' }, function (error, results) {
+      if (error) return done(error)
+
+      results.length.should.equal(1)
+      done()
+    })
+  })
+
   it('should fail gracefully with invalid JSON', function (done) {
     var blueBillywig = new BlueBillywig(options)
 

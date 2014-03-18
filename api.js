@@ -207,8 +207,17 @@ module.exports = function (options) {
         }
 
         body.items.forEach(function (result) {
-          result.assets = JSON.parse(result.assets)
-          result.thumbnails = JSON.parse(result.thumbnails)
+          try {
+            result.assets = JSON.parse(result.assets)
+          } catch (e) {
+            result.assets = {}
+          }
+
+          try {
+            result.thumbnails = JSON.parse(result.thumbnails)
+          } catch (e) {
+            result.thumbnails = {}
+          }
         })
 
         callback(error, body.items)

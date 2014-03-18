@@ -1,0 +1,33 @@
+{ "numfound": 1
+, "offset": 0
+, "count": 1
+, "items":
+  [ { "id": "2281659"
+    , "title": "Blue Billywig"
+    , "gendeeplink_string": ""
+    , "status": "published"
+    , "publicationid": 242
+    , "parentpublicationid": "0"
+    , "mediatype": "video"
+    , "usetype": "editorial"
+    , "sourcetype": "on_demand"
+    , "type": "MediaClip"
+    , "author": "Blue Billywig"
+    , "originalfilename": "Bluebillywig Branded - Final-4. H.264 1080p.mov"
+    , "modifieddate": "2014-02-11T15: 25: 48Z"
+    , "createddate": "2014-02-11T15: 20: 57Z"
+    , "sourceid_string": ""
+    , "published_date": "2014-02-11T15: 25: 48Z"
+    , "dart_zone_string": "Manual"
+    , "mainthumbnail_string": "\/sundayworld\/media\/2014\/02\/11\/1392132061054953\/1392132061054953_10.jpg"
+    , "views_int": 0
+    , "totalviews_int": 0
+    , "length_int": 168
+    , "assets": "[{\"mediatype\": \"MP4_HD\",\"id\": \"1392132060636770\",\"src\": \"\\\/sundayworld\\\/media\\\/2014\\\/02\\\/11\\\/asset-1392132060636770.mp4\",\"length\": \"168\",\"width\": \"1280\",\"height\": \"720\",\"bandwidth\": \"2000\"},{\"mediatype\": \"MP4_MAIN\",\"id\": \"1392132060870460\",\"src\": \"\\\/sundayworld\\\/media\\\/2014\\\/02\\\/11\\\/asset-1392132060870460.mp4\",\"length\": \"168\",\"width\": \"768\",\"height\": \"432\",\"bandwidth\": \"1200\"},{\"mediatype\": \"MP4_IPOD\",\"id\": \"1392132061012696\",\"src\": \"\\\/sundayworld\\\/media\\\/2014\\\/02\\\/11\\\/asset-1392132061012696.mp4\",\"length\": \"168\",\"width\": \"480\",\"height\": \"272\",\"bandwidth\": \"400\"},{\"mediatype\": \"MP4_IPOD\",\"id\": \"1392132061091546\",\"src\": \"\\\/sundayworld\\\/media\\\/2014\\\/02\\\/11\\\/asset-1392132061091546.mp4\",\"length\": \"168\",\"width\": \"768\",\"height\": \"432\",\"bandwidth\": \"800\"}]"
+    , "publication": [ "242" ]
+    , "score": 1.125343
+    }
+  ]
+, "facets": { "_empty_":  [ ] }
+, "facet_queries":  [ ]
+}
